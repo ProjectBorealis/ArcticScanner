@@ -1,0 +1,22 @@
+{
+  "name": "arctic-scanner-bot",
+  "version": "0.0.2",
+  "description": "A simple bot to initiate team city commands via REST API",
+  "engines": {
+    "node": "11.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "express": "^4.17.1",
+    "fs": "^0.0.2",
+    "curl-request": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ProjectBorealis/ArcticScanner.git"
+  },
+  "license": "MIT"
+}
