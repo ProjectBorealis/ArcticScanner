@@ -23,7 +23,6 @@ module.exports = {
 const Discord = require("discord.js")
 const client = new Discord.Client();
 const fs = require("fs");
-require(__dirname + '/app/keepAlive.js')
 
 //Command Handler
 client.commands = new Discord.Collection();
@@ -53,3 +52,8 @@ fs.readdir("./commands/", (err, files) => {
 
 client.on("ready", () => console.log("Online!"));
 client.login(process.env.TOKEN)
+
+var http = require("http");
+setInterval(function() {
+    http.get(process.env.HURL);
+}, 300000);
